@@ -6,9 +6,6 @@ const url ='https://api.publicapis.org/entries';
 
 var arg = process.argv.slice(2,3)
 var limit = process.argv.slice(3,4)
-console.log('arg:',arg)
-console.log('limit:',limit)
-
 
 fetch(`${url}?category=${arg}`)
     // Handle success
